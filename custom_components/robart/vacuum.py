@@ -13,7 +13,7 @@ import voluptuous as vol
 from homeassistant.components.vacuum import (
     PLATFORM_SCHEMA, SUPPORT_BATTERY, SUPPORT_PAUSE,
     SUPPORT_RETURN_HOME, SUPPORT_SEND_COMMAND, SUPPORT_STATUS, SUPPORT_STOP,
-    SUPPORT_TURN_OFF, SUPPORT_TURN_ON, VacuumDevice)
+    SUPPORT_TURN_OFF, SUPPORT_TURN_ON, VacuumEntity)
 from homeassistant.const import CONF_HOST
 from homeassistant.exceptions import PlatformNotReady
 import homeassistant.helpers.config_validation as cv
@@ -76,7 +76,7 @@ async def async_setup_platform(
     async_add_entities(devices, True)
 
 
-class RobartVacuum(VacuumDevice):
+class RobartVacuum(VacuumEntity):
     """Representation of a Roomba Vacuum cleaner robot."""
 
     def __init__(self, host, port='10009'):
