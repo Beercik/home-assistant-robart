@@ -1,4 +1,4 @@
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg) ](https://github.com/custom-components/hacs)![Validate with hassfest](https://github.com/jinglyjangles/home-assistant-robart/workflows/Validate%20with%20hassfest/badge.svg?branch=master) ![Validate](https://github.com/jinglyjangles/home-assistant-robart/workflows/Validate/badge.svg)
 
 
 # home-assistant-robart
