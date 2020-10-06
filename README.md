@@ -1,8 +1,16 @@
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
+
+
 # home-assistant-robart
-Home Assistant (custom component) integration of MyVacBot Robart
+Home Assistant integration of RobartAI run robot vacuums. 
+Thanks to @eworme for the original code
+
+Tested on:
+- Hoover Rogue 970
+- Robart MyVacBot
 
 # Install
-- Copy directory **robart** to **.homeassistant/custom_components/**
+- Add custom repository to HACS, install Robart
 
 - Add **vacuum** section to **configuration.yaml**
 
@@ -12,3 +20,9 @@ Home Assistant (custom component) integration of MyVacBot Robart
       host: <ip address>
 ```
   
+# To Do:
+- See https://github.com/jinglyjangles/hoover_970_integration for additonal api calls available
+- Add importing the custom robot name; current on the 970's it defualts to Josephine unless you call the name endpoint
+- Add support for only cleaning certain rooms; see maps endpoint 
+- Add support for live/static room map; maps endpoint provides x,y coords and rooms
+- Add support for no-go zones and cleaning intensity; see cleaning power in misc_notes
