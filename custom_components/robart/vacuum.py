@@ -50,7 +50,8 @@ async def async_setup_platform(
         hass, config, async_add_entities, discovery_info=None):
     """Set up the Robart MyVacBot vacuum cleaner platform."""
 
-    from .robart import Robart_MyVacBot, scan
+    from .robart import Robart_MyVacBot
+    from . import scan
 
     if PLATFORM not in hass.data:
         hass.data[PLATFORM] = {}
