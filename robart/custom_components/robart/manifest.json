@@ -1,0 +1,7 @@
+{
+  "domain": "robart",
+  "name": "Robart Robot Vacuum",
+  "documentation": "https://github.com/jinglyjangles/home-assistant-robart",
+  "issue_tracker": "https://github.com/jinglyjangles/home-assistant-robart/issues",
+  "codeowners": ["@eworme","@jinglyjangles"]
+}
