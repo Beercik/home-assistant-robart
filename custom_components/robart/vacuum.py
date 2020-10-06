@@ -83,7 +83,7 @@ class RobartVacuum(VacuumEntity):
     def __init__(self, host, port='10009'):
         """Initialize the Roomba handler."""
 
-        from robart import Robart_MyVacBot
+        from .robart import Robart_MyVacBot
 
         self.vacuum_state = None
         self._state_attrs = {}
