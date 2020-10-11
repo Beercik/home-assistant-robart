@@ -85,7 +85,6 @@ class Robart_MyVacBot(Robart_REST):
                 
     def from_json_id(self, js):
         super().from_json(js)
-        self._name = js["name"]
         self._unique_id = js["unique_id"]
         self._camlas_unique_id = js["camlas_unique_id"]
         self._model = js["model"]
@@ -99,7 +98,11 @@ class Robart_MyVacBot(Robart_REST):
         self._voltage = js["voltage"] / 1000
         self._cleaning_parameter_set = js["cleaning_parameter_set"]
         self._time = js["time"]        
-    
+
+    def from_name_json(self,js):
+        super().from_json(js)
+        self._name = js['name']
+
     def get_robotid(self):
         json_state = self.call_rest('get/robot_id')
         self.from_json_id(json_state)
@@ -118,6 +121,11 @@ class Robart_MyVacBot(Robart_REST):
     
     def set_clean(self):
         json_state = self.call_rest('set/clean_start_or_continue?cleaning_parameter_set=1')
+
+    def get_name(self):
+        json_state = self.call_rest('get/robot_name')
+        self.from_name_json(json_state)
+        return True
 
     def test(self, arg):
         json_state = self.call_rest(arg)
