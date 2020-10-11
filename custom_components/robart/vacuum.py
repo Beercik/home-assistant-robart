@@ -93,6 +93,7 @@ class RobartVacuum(VacuumEntity):
         try:
           self.vacuum.get_state()
           self.vacuum.get_robotid()
+          self.vacuum.get_name()
         except ConnectionError:
           self.vacuum_state = None
           _LOGGER.error("Communnication error with %s (%s)", self.vacuum._name, self.vacuum._restCallUrl)      
