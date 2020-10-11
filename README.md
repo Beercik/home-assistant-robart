@@ -20,8 +20,10 @@ Tested on:
 ```
   
 # To Do:
-- See https://github.com/jinglyjangles/hoover_970_integration for additonal api calls available
-- Add importing the custom robot name; current on the 970's it defualts to Josephine unless you call the name endpoint
-- Add support for only cleaning certain rooms; see maps endpoint 
-- Add support for live/static room map; maps endpoint provides x,y coords and rooms
-- Add support for no-go zones and cleaning intensity; see cleaning power in misc_notes
+ See https://github.com/jinglyjangles/hoover_970_integration for additonal api calls available
+- [ ] Add support for only cleaning certain rooms; see maps endpoint 
+- [ ] Add support for live/static room map; maps endpoint provides x,y coords and rooms
+- [ ] Add support for no-go zones and cleaning intensity; see cleaning power in misc_notes
+
+# Done
+- [x] Add importing the custom robot name; current on the 970's it defualts to Josephine unless you call the name endpoint
