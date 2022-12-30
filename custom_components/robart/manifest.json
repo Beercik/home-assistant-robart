@@ -4,4 +4,5 @@
   "documentation": "https://github.com/jinglyjangles/home-assistant-robart",
   "issue_tracker": "https://github.com/jinglyjangles/home-assistant-robart/issues",
   "codeowners": ["@eworme","@jinglyjangles"]
+  "version":  "1.0.0"
 }
